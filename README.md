@@ -2,7 +2,7 @@
 
 UWPDesign is a collection of helpers for making pretty Windows Store apps.
 It contains the entire Material Design color palette along with several extensions methods and converters.
-You can find the Material Design colors here: https://material.io/guidelines/style/color.html
+Read more about [Material Design colors](https://material.io/guidelines/style/color.html).
 
 ## Contents
 
@@ -54,8 +54,8 @@ Background="{Binding ContainerColor, Converter={StaticResource portableColorToBr
 
 I used this library in several of my games, check them out in Windows Store:
 
-* Jigsaw Puzzle Frenzy https://www.microsoft.com/store/apps/9wzdncrddqbm
-* Hexa Word Search https://www.microsoft.com/store/apps/9mtxw2nrnjf1
-* Quiz for Geeks https://www.microsoft.com/store/apps/9wzdncrddqbg
-* Fun with Words https://www.microsoft.com/store/apps/9nblgggzpgrt
-* Easy Peasy Puzzles https://www.microsoft.com/store/apps/9wzdncrddj8g
+* [Jigsaw Puzzle Frenzy](https://www.microsoft.com/store/apps/9wzdncrddqbm)
+* [Hexa Word Search](https://www.microsoft.com/store/apps/9mtxw2nrnjf1)
+* [Quiz for Geeks](https://www.microsoft.com/store/apps/9wzdncrddqbg)
+* [Fun with Words](https://www.microsoft.com/store/apps/9nblgggzpgrt)
+* [Easy Peasy Puzzles](https://www.microsoft.com/store/apps/9wzdncrddj8g)
