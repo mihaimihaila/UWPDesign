@@ -13,7 +13,7 @@ Read more about [Material Design colors](https://material.io/guidelines/style/co
 
 ### PortableColor
 Creating a PortableColor is easy:
-```
+```csharp
 var color = new PortableColor(255, 150, 150, 150);
 ```
 
@@ -21,18 +21,18 @@ var color = new PortableColor(255, 150, 150, 150);
 
 Material Design colors are organized in a dictionary structure to make it easier to access the colors and variations:
 
-```
+```csharp
 var color = return MaterialColor.Colors[MaterialColorName.Red].Variations[MaterialColorVariation.Variation700];
 ```
 
 ### Extensions
 For converting between the built in classes and Portable color, several extension are available:
 
-```
+```csharp
 var systemColor = MaterialColor.Colors[MaterialColorName.Brown].Variations[MaterialColorVariation.Variation50].ToColor()
 ```
 and
-```
+```csharp
 var systemColor = "#77000000".ToColor()
 ```
 
@@ -41,21 +41,15 @@ var systemColor = "#77000000".ToColor()
 A PortableColor can easily be converter in XAML to a SolidColorBrush using a converter
 
 ViewModel
-```
+```csharp
 public PortableColor ContainerColor { get; set;}
 ```
 
 XAML
-```
+```csharp
 Background="{Binding ContainerColor, Converter={StaticResource portableColorToBrushConverter}}"
 ```
 
 ## Apps using this library
 
-I used this library in several of my games, check them out in Windows Store:
-
-* [Jigsaw Puzzle Frenzy](https://www.microsoft.com/store/apps/9wzdncrddqbm)
-* [Hexa Word Search](https://www.microsoft.com/store/apps/9mtxw2nrnjf1)
-* [Quiz for Geeks](https://www.microsoft.com/store/apps/9wzdncrddqbg)
-* [Fun with Words](https://www.microsoft.com/store/apps/9nblgggzpgrt)
-* [Easy Peasy Puzzles](https://www.microsoft.com/store/apps/9wzdncrddj8g)
+I used this library in several of my games published in Microsoft Store, check them out at http://frenzygames.net
